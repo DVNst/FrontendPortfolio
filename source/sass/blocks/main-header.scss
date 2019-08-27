@@ -1,7 +1,10 @@
 .main-header {
+    min-height: 960px;
+
     background-color: #101528;
     background-image: url('../img/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: bottom;
     color:white;
 }

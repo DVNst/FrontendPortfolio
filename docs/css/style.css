@@ -17,9 +17,19 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.wrap {
+  margin: 0 auto;
+  max-width: 1040px; }
+
+.block {
+  background-color: #000000;
+  color: #C5C5C5; }
+
 .main-header {
+  min-height: 960px;
   background-color: #101528;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
   color: white; }
