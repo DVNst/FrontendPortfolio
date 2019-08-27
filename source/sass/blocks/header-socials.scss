@@ -1,0 +1,42 @@
+.header-socials {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin: 0;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--instagram {
+      background-image: url('../img/social-instagram.svg');
+    }
+
+    &--facebook {
+      background-image: url('../img/social-facebook.svg');
+    }
+
+    &--vk {
+      background-image: url('../img/social-vk.svg');
+    }
+
+    &--github {
+      background-image: url('../img/social-github.svg');
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
