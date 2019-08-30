@@ -1,0 +1,30 @@
+.works {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 100px solid $bg-dark;
+    border-right: 50vw solid $bg-dark;
+    border-bottom: 100px solid transparent;
+    border-left: 50vw solid transparent;
+
+    background-color: $bg-ligth;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 50vw solid $bg-dark;
+    border-bottom: 100px solid $bg-dark;
+    border-left: 50vw solid transparent;
+
+    background-color: $bg-ligth;
+  }
+}

@@ -28,40 +28,4 @@
     background-color: $bg-ligth;
     color: $text-dark;
   }
-
-  &--skew-bottom {
-    padding-bottom: 0;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100px;
-      clip-path: polygon(0 0, 0% 100%, 100% 100%);
-  
-      background-color: $bg-ligth;
-  
-      @media (min-width:0\0) {
-        background-color: $bg-dark;
-      }
-    }
-  }
-
-  &--skew-top {
-    padding-top: 0;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100px;
-      clip-path: polygon(0 100%, 0 0, 100% 0);
-  
-      background-color: $bg-ligth;
-  
-      @media (min-width:0\0) {
-        background-color: $bg-dark;
-      }
-    }
-  }
 }
