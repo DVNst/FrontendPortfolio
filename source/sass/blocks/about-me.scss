@@ -1,3 +1,29 @@
 .about-me {
+  position: relative;
   padding-bottom: 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 512px;
+    height: 300px;
+
+    top: 200px;
+    left: 75%;
+    transform: rotate(30deg);
+
+    background-image: url('../img/laptop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+
+    animation: laptop 10s ease-in-out infinite;
+  }
+}
+
+@keyframes laptop {
+  0% {transform:translateY(0) rotate(30deg);}
+  50%{transform:translateY(20px) rotate(32deg);}
+  100% {transform:translateY(0) rotate(30deg);}
 }

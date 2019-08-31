@@ -27,4 +27,21 @@
 
     background-color: $bg-ligth;
   }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    width: 30%;
+    height: 380px;
+  }
 }

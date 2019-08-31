@@ -7,3 +7,12 @@ body {
   line-height: 22px;
   font-weight: 400;
 }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
