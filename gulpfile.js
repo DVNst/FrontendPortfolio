@@ -67,6 +67,13 @@ gulp.task('webp', () =>
     .pipe(gulp.dest(dir + '/img'))
 );
 
+gulp.task('copyjs', () =>
+  gulp.src('source/js/**', {
+      base: 'source'
+    })
+    .pipe(gulp.dest(dir))
+);
+
 gulp.task('copy', () =>
   gulp.src([
       'source/fonts/**',
@@ -93,6 +100,7 @@ gulp.task('server', function () {
 
   gulp.watch('source/img/**/*', gulp.series('images'));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
+  gulp.watch('source/js/*.js', gulp.series('copyjs')).on('change', server.reload);
   gulp.watch('source/*.html', gulp.series('html')).on('change', server.reload);
 });
 
