@@ -42,6 +42,7 @@
   &__item {
     margin-bottom: 50px;
     width: 30%;
-    height: 380px;
+    max-height: 380px;
+    box-shadow: 5px 5px 10px transparentize($bg-dark, 0.7);
   }
 }

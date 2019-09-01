@@ -14,22 +14,22 @@
     <div class="wrap">
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrap">
-          <button class="main-nav__toggle main-nav__toggle--closed no-js">
+          <button class="main-nav__toggle no-js">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
           <ul class="main-nav__list">
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Обо мне</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Портфолио</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Навыки</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#about">Обо мне</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#works">Портфолио</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#skils">Навыки</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#contacs">Контакты</a></li>
           </ul>
         </div>
 
-        <div class="main-header__contacs header-contacs">
-          <a class="header-contacs__link header-contacs__link--phone" href="tel:+79296493834">+7 929 649 38 34</a>
-          <a class="header-contacs__link header-contacs__link--email" href="mailto:dvn-studio@mail.ru">dvn-studio@mail.ru</a>
+        <div class="main-header__contacs contacs">
+          <a class="contacs__link contacs__link--phone" href="tel:+79296493834">+7 929 649 38 34</a>
+          <a class="contacs__link contacs__link--email" href="mailto:dvn-studio@mail.ru">dvn-studio@mail.ru</a>
         </div>
       </nav>
 
@@ -38,27 +38,27 @@
         <p class="main-header__name">Виталий Дедюрин</p>
         <p class="main-header__desc">Веб-разработчик</p>
 
-        <ul class="main-header__socials header-socials">
-          <li class="header-socials__item">
-            <a class="header-socials__link header-socials__link--instagram" href="https://www.instagram.com/dvn84/" target="_blank">
+        <ul class="main-header__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/dvn84/" target="_blank">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
 
-          <li class="header-socials__item">
-            <a class="header-socials__link header-socials__link--facebook" href="https://www.facebook.com/vitaly.dedyurin" target="_blank">
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/vitaly.dedyurin" target="_blank">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
 
-          <li class="header-socials__item">
-            <a class="header-socials__link header-socials__link--vk" href="https://vk.com/d_e_s_i_g_n" target="_blank">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="https://vk.com/d_e_s_i_g_n" target="_blank">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
 
-          <li class="header-socials__item">
-            <a class="header-socials__link header-socials__link--github" href="https://github.com/DVNst" target="_blank">
+          <li class="socials__item">
+            <a class="socials__link socials__link--github" href="https://github.com/DVNst" target="_blank">
               <span class="visually-hidden">GitHub</span>
             </a>
           </li>
@@ -68,7 +68,7 @@
   </header>
 
   <main class="main-page">
-    <section class="block block--skew-bottom about-me">
+    <section class="block block--skew-bottom about-me" id="about">
       <div class="wrap">
         <h2 class="block__title about-me__title">Обо мне</h2>
 
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="block block--light works">
+    <section class="block block--light works" id="works">
       <div class="wrap">
         <h2 class="block__title works__title">Портфолио</h2>
 
@@ -145,7 +145,7 @@
       </div>
     </section>
 
-    <section class="block block--skew-top skils">
+    <section class="block block--skew-top skils" id="skils">
       <div class="wrap">
         <h2 class="block__title skils__title">Навыки</h2>
 
@@ -154,8 +154,45 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    
+  <footer class="main-footer block" id="contacs">
+    <div class="wrap">
+      <h2 class="visually-hidden block__title main-footer__title">Контакты</h2>
+
+      <div class="main-footer__wrap">
+        <ul class="main-footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/dvn84/" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/vitaly.dedyurin" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="https://vk.com/d_e_s_i_g_n" target="_blank">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link socials__link--github" href="https://github.com/DVNst" target="_blank">
+              <span class="visually-hidden">GitHub</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="main-footer__contacs contacs">
+          <!--
+          <a class="main-footer__link main-footer__link--phone" href="tel:+79296493834">+7 929 649 38 34</a>
+          -->
+          <a class="contacs__link contacs__link--email" href="mailto:dvn-studio@mail.ru">dvn-studio@mail.ru</a>
+        </div>
+      </div>
+    </div>
   </footer>
   
   <script src="js/script.js"></script>

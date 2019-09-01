@@ -1,0 +1,16 @@
+.main-footer {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__socials {
+    margin-bottom: 13px;
+  }
+
+  &__contacs {
+    text-align: center;
+  }
+}
